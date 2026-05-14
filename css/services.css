@@ -1,0 +1,114 @@
+/* SERVICES HERO */
+
+.about-hero{
+    position:relative;
+
+    height:420px;
+
+    background:url('../assets/images/ca_2.png');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
+
+/* SERVICES PAGE */
+
+.services-section{
+    padding:100px 0;
+
+    background:#f8fafc;
+}
+
+/* GRID */
+
+.services-grid{
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+}
+
+/* CARD */
+
+.service-card{
+    background:#fff;
+
+    padding:45px 35px;
+
+    border-radius:14px;
+
+    text-align:center;
+
+    transition:0.4s;
+
+    box-shadow:0 5px 25px rgba(0,0,0,0.06);
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.12);
+}
+
+/* ICON */
+
+.service-card i{
+    font-size:48px;
+
+    color:#f4a100;
+
+    margin-bottom:22px;
+}
+
+/* TITLE */
+
+.service-card h3{
+    font-size:28px;
+
+    color:#0b1f3a;
+
+    margin-bottom:18px;
+}
+
+/* TEXT */
+
+.service-card p{
+    color:#666;
+
+    line-height:32px;
+
+    font-size:16px;
+}
+
+/* ANIMATION */
+
+.reveal{
+    opacity:0;
+
+    transform:translateY(80px);
+
+    transition:all 1s ease;
+}
+
+.reveal.active{
+    opacity:1;
+
+    transform:translateY(0);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+    .services-grid{
+        grid-template-columns:1fr;
+    }
+
+}

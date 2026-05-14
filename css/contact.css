@@ -1,0 +1,119 @@
+/* CONTACT HERO */
+
+.about-hero{
+    position:relative;
+
+    height:420px;
+
+    background:url('../assets/images/ca_4.png');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
+
+/* CONTACT PAGE */
+
+.contact-section{
+    padding:100px 0;
+
+    background:#f8fafc;
+}
+
+/* GRID */
+
+.contact-grid{
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:50px;
+}
+
+/* LEFT */
+
+.contact-info h2{
+    font-size:42px;
+
+    color:#0b1f3a;
+
+    margin-bottom:30px;
+}
+
+.contact-info p{
+    font-size:18px;
+
+    margin-bottom:24px;
+
+    color:#444;
+}
+
+.contact-info i{
+    color:#f4a100;
+
+    margin-right:10px;
+}
+
+/* FORM */
+
+.contact-form form{
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:18px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    font-family:'Poppins', sans-serif;
+}
+
+.contact-form button{
+    background:#0b1f3a;
+
+    color:#fff;
+
+    border:none;
+
+    padding:18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:0.4s;
+}
+
+.contact-form button:hover{
+    background:#f4a100;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+}
