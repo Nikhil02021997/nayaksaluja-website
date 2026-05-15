@@ -45,15 +45,17 @@ body{
 .navbar{
     background:#fff;
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
     padding:25px 80px;
 
     box-shadow:0 2px 10px rgba(0,0,0,0.05);
 
     transition:0.4s;
+}
+
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
 .logo h2{
@@ -776,4 +778,71 @@ body{
 .enquiry-float:hover{
     background:#f4a100;
     transform:translateY(-4px);
+}
+/* FINAL NAVBAR FIX */
+
+.navbar{
+    display:flex !important;
+    justify-content:space-between !important;
+    align-items:center !important;
+
+    padding:25px 80px !important;
+}
+
+.nav-links{
+    display:flex !important;
+    align-items:center !important;
+
+    gap:45px !important;
+
+    list-style:none !important;
+
+    margin:0 !important;
+    padding:0 !important;
+}
+
+.nav-links li{
+    list-style:none !important;
+}
+
+.nav-links a{
+    text-decoration:none !important;
+}
+
+.nav-btn{
+    display:inline-flex !important;
+
+    align-items:center !important;
+    justify-content:center !important;
+
+    background:#0b1f3a !important;
+
+    color:#fff !important;
+
+    padding:16px 34px !important;
+
+    border-radius:10px !important;
+
+    text-decoration:none !important;
+}
+/* PERFECT TOP BAR ALIGNMENT */
+
+.top-bar .container{
+    display:flex !important;
+    align-items:center !important;
+}
+
+.top-left{
+    display:flex !important;
+    align-items:center !important;
+    gap:30px !important;
+}
+
+.top-right{
+    display:flex !important;
+    align-items:center !important;
+    gap:20px !important;
+
+    position:absolute !important;
+    right:80px !important;
 }
