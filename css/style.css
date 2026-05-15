@@ -308,6 +308,7 @@ body{
     }
 
 }
+
 /* CLIENT SECTION */
 
 .client-section{
@@ -330,8 +331,6 @@ body{
     font-size:28px;
     font-weight:600;
 }
-
-/* SLIDER */
 
 .client-slider{
     width:100%;
@@ -382,8 +381,6 @@ body{
     transform:translateY(-6px);
 }
 
-/* ANIMATION */
-
 @keyframes scrollClients{
 
     0%{
@@ -395,10 +392,11 @@ body{
     }
 
 }
+
 /* TESTIMONIAL SECTION */
 
 .testimonial-section{
-    padding:110px 0;
+    padding:110px 80px;
 
     background:#f8fafc;
 }
@@ -417,8 +415,6 @@ body{
     margin-top:18px;
 }
 
-/* GRID */
-
 .testimonial-grid{
     display:grid;
 
@@ -426,8 +422,6 @@ body{
 
     gap:30px;
 }
-
-/* CARD */
 
 .testimonial-card{
     background:#fff;
@@ -447,8 +441,6 @@ body{
     box-shadow:0 15px 40px rgba(0,0,0,0.12);
 }
 
-/* STARS */
-
 .stars{
     color:#f4a100;
 
@@ -456,8 +448,6 @@ body{
 
     margin-bottom:20px;
 }
-
-/* TEXT */
 
 .testimonial-card p{
     color:#555;
@@ -468,8 +458,6 @@ body{
 
     font-size:17px;
 }
-
-/* NAME */
 
 .testimonial-card h3{
     color:#0b1f3a;
@@ -483,12 +471,309 @@ body{
     color:#777;
 }
 
-/* RESPONSIVE */
+/* BLOG SECTION */
+
+.blog-section{
+    padding:100px 80px;
+    background:#ffffff;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title span{
+    color:#f4a100;
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:2px;
+}
+
+.section-title h2{
+    font-size:52px;
+    color:#0b1f3a;
+    margin-top:12px;
+    font-weight:700;
+}
+
+.blog-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:35px;
+    margin-top:50px;
+}
+
+.blog-card{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 30px rgba(0,0,0,0.08);
+    transition:0.4s;
+}
+
+.blog-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 40px rgba(0,0,0,0.14);
+}
+
+.blog-card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    display:block;
+}
+
+.blog-content{
+    padding:28px;
+}
+
+.blog-content h3{
+    font-size:28px;
+    color:#0b1f3a;
+    margin-bottom:15px;
+    line-height:1.4;
+}
+
+.blog-content p{
+    color:#666;
+    line-height:30px;
+    margin-bottom:20px;
+    font-size:16px;
+}
+
+.blog-content a{
+    color:#f4a100;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* CTA SECTION */
+
+.cta-section{
+    background:#0b1f3a;
+    padding:55px 80px;   /* reduced from 80px */
+}
+
+.cta-container{
+    max-width:1300px;   /* reduced width */
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px;   /* reduced gap */
+}
+
+.cta-text h2{
+    color:#fff;
+    font-size:42px;   /* reduced from 52px */
+    margin-bottom:12px;
+    line-height:1.25;
+    max-width:700px;
+}
+
+.cta-text p{
+    color:#d6d6d6;
+    font-size:16px;   /* reduced */
+    line-height:28px;
+    max-width:700px;
+}
+
+.cta-btn{
+    background:#f4a100;
+    color:#fff;
+    padding:14px 30px;   /* smaller button */
+    border-radius:8px;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:600;
+    transition:0.3s;
+
+    min-width:170px;
+    text-align:center;
+}
+
+.cta-btn:hover{
+    background:#ffb300;
+}
+
+/* FOOTER */
+
+.footer{
+    background:#06152c;
+    padding:50px 80px 18px;   /* reduced */
+}
+
+.footer-grid{
+    max-width:1300px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:45px;   /* reduced */
+}
+
+.footer-about h3,
+.footer-links h3,
+.footer-contact h3{
+    color:#fff;
+    font-size:22px;   /* reduced */
+    margin-bottom:18px;
+}
+
+.footer-about p,
+.footer-contact p,
+.footer-links a{
+    color:#d2d2d2;
+    font-size:15px;
+    line-height:30px;   /* tighter */
+    text-decoration:none;
+}
+
+.footer-links a{
+    margin-bottom:6px;
+}
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,0.1);
+    margin-top:30px;
+    padding-top:15px;
+    text-align:center;
+}
+
+.footer-bottom p{
+    color:#aaa;
+    font-size:13px;
+}
+
+/* FINAL RESPONSIVE */
 
 @media(max-width:992px){
 
-    .testimonial-grid{
+    .testimonial-grid,
+    .blog-grid{
         grid-template-columns:1fr;
     }
 
+    .cta-container{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .blog-section,
+    .cta-section,
+    .footer,
+    .testimonial-section{
+        padding-left:25px;
+        padding-right:25px;
+    }
+
+    .section-title h2,
+    .testimonial-heading h2,
+    .cta-text h2{
+        font-size:36px;
+    }
+
+}
+/* WHATSAPP FLOAT BUTTON */
+
+.whatsapp-float{
+    position:fixed;
+    width:65px;
+    height:65px;
+    bottom:30px;
+    right:25px;   /* change to left:25px if needed */
+
+    background:#25d366;
+    color:#fff;
+
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:34px;
+    text-decoration:none;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.25);
+
+    z-index:9999;
+
+    transition:0.3s ease;
+}
+
+.whatsapp-float:hover{
+    transform:scale(1.1);
+    background:#1ebe5d;
+}
+/* WHATSAPP FLOAT BUTTON */
+
+.whatsapp-float{
+    position:fixed;
+    width:65px;
+    height:65px;
+    bottom:30px;
+    right:25px;
+
+    background:#25d366;
+    color:#fff;
+
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:34px;
+    text-decoration:none;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.25);
+
+    z-index:9999;
+
+    transition:0.3s ease;
+}
+
+.whatsapp-float:hover{
+    transform:scale(1.1);
+    background:#1ebe5d;
+}
+
+/* ENQUIRY FLOAT BUTTON */
+
+.enquiry-float{
+    position:fixed;
+    bottom:110px;
+    right:25px;
+
+    background:#0b1f3a;
+    color:#fff;
+
+    padding:14px 24px;
+
+    border-radius:40px;
+
+    font-size:15px;
+    font-weight:600;
+
+    text-decoration:none;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.20);
+
+    z-index:9999;
+
+    transition:0.3s ease;
+}
+
+.enquiry-float:hover{
+    background:#f4a100;
+    transform:translateY(-4px);
 }
