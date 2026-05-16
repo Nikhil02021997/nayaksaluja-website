@@ -838,11 +838,103 @@ body{
     gap:30px !important;
 }
 
-.top-right{
-    display:flex !important;
-    align-items:center !important;
-    gap:20px !important;
+/* ================= MOBILE FIX ================= */
 
-    position:absolute !important;
-    right:80px !important;
+@media screen and (max-width:768px){
+
+    /* TOP BAR */
+
+    .top-bar{
+        padding:15px 20px !important;
+    }
+
+    .top-bar .container{
+        display:flex !important;
+        flex-direction:column !important;
+        align-items:center !important;
+
+        gap:12px !important;
+
+        position:static !important;
+    }
+
+    .top-left{
+        display:flex !important;
+        flex-direction:column !important;
+        align-items:center !important;
+
+        gap:10px !important;
+    }
+
+    .top-right{
+        position:static !important;
+
+        display:flex !important;
+        justify-content:center !important;
+        align-items:center !important;
+
+        gap:16px !important;
+
+        width:100% !important;
+    }
+
+    /* NAVBAR */
+
+    .navbar{
+        display:flex !important;
+        flex-direction:column !important;
+
+        align-items:center !important;
+        justify-content:center !important;
+
+        gap:25px !important;
+
+        padding:30px 20px !important;
+    }
+
+    .logo{
+        text-align:center !important;
+    }
+
+    .logo h2{
+        font-size:52px !important;
+        line-height:60px !important;
+    }
+
+    .logo p{
+        font-size:18px !important;
+    }
+
+    .nav-links{
+        display:flex !important;
+        flex-direction:column !important;
+
+        align-items:center !important;
+        justify-content:center !important;
+
+        width:100% !important;
+
+        gap:22px !important;
+    }
+
+    .nav-links li{
+        margin:0 !important;
+    }
+
+    .nav-links a{
+        font-size:28px !important;
+    }
+
+    .nav-btn{
+        width:220px !important;
+
+        display:flex !important;
+        justify-content:center !important;
+        align-items:center !important;
+
+        font-size:24px !important;
+
+        padding:18px 24px !important;
+    }
+
 }
