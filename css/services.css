@@ -299,107 +299,74 @@
 
 }
 /* ================= MOBILE RESPONSIVE FIX ================= */
+/* ===== MOBILE NAVBAR FIX ===== */
 
-@media screen and (max-width: 768px){
-
-    .top-bar .container{
-        display:flex !important;
-        flex-direction:column !important;
-        align-items:flex-start !important;
-        gap:12px !important;
-    }
-
-    .top-left,
-    .top-right{
-        display:flex !important;
-        flex-wrap:wrap !important;
-        gap:15px !important;
-    }
+@media screen and (max-width:768px){
 
     .navbar{
-        display:flex !important;
         flex-direction:column !important;
-        align-items:flex-start !important;
+        align-items:center !important;
+        justify-content:center !important;
 
         padding:25px 20px !important;
+    }
 
-        gap:30px !important;
+    .logo{
+        width:100% !important;
+        text-align:center !important;
+
+        margin-bottom:20px !important;
     }
 
     .nav-links{
+        width:100% !important;
+
         display:flex !important;
         flex-direction:column !important;
 
-        width:100% !important;
+        align-items:center !important;
+        justify-content:center !important;
 
-        gap:22px !important;
+        gap:20px !important;
 
-        padding:0 !important;
         margin:0 !important;
+        padding:0 !important;
     }
 
     .nav-links li{
-        list-style:none !important;
+        width:100% !important;
+
+        display:flex !important;
+        justify-content:center !important;
     }
 
     .nav-links a{
-        font-size:26px !important;
+        font-size:28px !important;
         display:block !important;
+        text-align:center !important;
+    }
+
+    .nav-btn{
+        margin-top:25px !important;
+
+        width:220px !important;
+
+        display:flex !important;
+        justify-content:center !important;
+        align-items:center !important;
+
+        font-size:24px !important;
+
+        padding:18px 24px !important;
     }
 
     .logo h2{
-        font-size:56px !important;
-        line-height:64px !important;
+        font-size:58px !important;
+        line-height:68px !important;
     }
 
     .logo p{
         font-size:20px !important;
     }
 
-    .nav-btn{
-        width:100% !important;
-
-        text-align:center !important;
-
-        padding:18px !important;
-
-        font-size:24px !important;
-    }
-
-    .hero-content h1,
-    .about-hero-content h1{
-        font-size:46px !important;
-        line-height:58px !important;
-    }
-
-    .hero-content p,
-    .about-hero-content p{
-        font-size:18px !important;
-        line-height:30px !important;
-    }
-
-    .services-grid,
-    .footer-grid,
-    .team-grid,
-    .contact-grid{
-        grid-template-columns:1fr !important;
-    }
-
-    .about-container,
-    .details-grid,
-    .why-section{
-        display:flex !important;
-        flex-direction:column !important;
-    }
-
-    .enquiry-float{
-        right:18px !important;
-        bottom:110px !important;
-    }
-
-    .whatsapp-float{
-        right:18px !important;
-        bottom:30px !important;
-    }
-
-}  
+}
