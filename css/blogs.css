@@ -10,11 +10,131 @@ body{
     color:#111;
 }
 
+/* TOP BAR */
+
+.top-bar{
+    background:#000;
+    color:#fff;
+    padding:14px 6%;
+}
+
+.top-bar .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.top-left,
+.top-right{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.top-right a{
+    color:#f4a300;
+    text-decoration:none;
+}
+
+.top-left i,
+.top-right i{
+    color:#f4a300;
+}
+
+/* NAVBAR */
+
+.navbar{
+    background:#fff;
+    padding:25px 6%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+}
+
+.logo{
+    flex-shrink:0;
+}
+
+.logo h2{
+    color:#08224a;
+    font-size:58px;
+    font-weight:800;
+    line-height:0.95;
+    max-width:320px;
+}
+
+.logo p{
+    color:#f4a300;
+    font-size:20px;
+    margin-top:10px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:40px;
+    align-items:center;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#111;
+    font-weight:600;
+    font-size:18px;
+    transition:0.3s ease;
+}
+
+.nav-links a:hover{
+    color:#0b2c66;
+}
+
+.active-link{
+    color:#0b2c66 !important;
+}
+
+.nav-btn{
+    background:#0b2c66;
+    color:#fff;
+
+    padding:18px 34px;
+
+    border-radius:16px;
+    text-decoration:none;
+    font-weight:600;
+    font-size:18px;
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    white-space:nowrap;
+    flex-shrink:0;
+
+    min-width:220px;
+
+    transition:0.3s ease;
+}
+
+.nav-btn:hover{
+    background:#123b85;
+    transform:translateY(-2px);
+}
+
+/* HERO */
+
 .blogs-hero{
     position:relative;
     height:60vh;
 
-    background:url('../assets/hero-bg.jpg') center/cover no-repeat;
+    background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url('../assets/images/blog-3.jpg');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 
     display:flex;
     justify-content:center;
@@ -26,7 +146,7 @@ body{
 .overlay{
     position:absolute;
     inset:0;
-    background:rgba(0,0,0,0.65);
+    background:rgba(0,0,0,0.35);
 }
 
 .hero-content{
@@ -44,6 +164,8 @@ body{
 .hero-content p{
     font-size:20px;
 }
+
+/* BLOG SECTION */
 
 .blogs-section{
     width:90%;
@@ -85,7 +207,69 @@ body{
     line-height:1.8;
 }
 
+/* FOOTER */
+
+.footer{
+    background:#02163a;
+    color:white;
+    padding:80px 8%;
+}
+
+.footer-container{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:60px;
+}
+
+.footer h2{
+    margin-bottom:25px;
+}
+
+.footer p,
+.footer a{
+    color:#ddd;
+    line-height:2;
+    text-decoration:none;
+    display:block;
+}
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,0.1);
+    margin-top:50px;
+    padding-top:30px;
+    text-align:center;
+}
+
+/* MOBILE */
+
 @media(max-width:768px){
+
+    .top-bar .container{
+        flex-direction:column;
+        gap:12px;
+        text-align:center;
+    }
+
+    .top-left,
+    .top-right{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .navbar{
+        flex-direction:column;
+        gap:25px;
+        text-align:center;
+    }
+
+    .logo h2{
+        font-size:42px;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        gap:18px;
+    }
 
     .hero-content h1{
         font-size:42px;
@@ -102,5 +286,9 @@ body{
 
     .blog-content h2{
         font-size:28px;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
     }
 }
