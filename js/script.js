@@ -34,3 +34,45 @@ function reveal(){
     }
 
 }
+/* READ MORE TOGGLE */
+
+document.querySelectorAll('.read-more-btn').forEach(button => {
+
+    button.addEventListener('click', function(e) {
+
+        e.preventDefault();
+
+        const target = document.querySelector(
+            this.getAttribute('href')
+        );
+
+        /* CLOSE ALL */
+
+        document.querySelectorAll('.partner-bio').forEach(section => {
+
+            if(section !== target){
+
+                section.classList.remove('show-bio');
+
+            }
+
+        });
+
+        /* TOGGLE CURRENT */
+
+        target.classList.toggle('show-bio');
+
+        /* SCROLL */
+
+        if(target.classList.contains('show-bio')){
+
+            target.scrollIntoView({
+                behavior:'smooth',
+                block:'start'
+            });
+
+        }
+
+    });
+
+});
